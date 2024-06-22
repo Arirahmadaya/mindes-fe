@@ -12,7 +12,7 @@ const RelatedNews = () => {
 
   const fetchRelatedPosts = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/berita/related');
+      const response = await axios.get('http://data.mindes.my.id/berita/related');
       setRelatedPosts(response.data.data);
     } catch (error) {
       console.error('Terjadi kesalahan', error);
